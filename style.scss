@@ -307,10 +307,10 @@ body {
         }
       }
       .links-details {
-        width: 70%;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-inline: 1rem;
         img {
           max-width: 3rem;
