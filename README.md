@@ -1,6 +1,7 @@
 # CV Template coded by Far5had
 
 This is a CV template includes sections for profile information, work experience, educational background, and links.
+[Live View](https://fa125had.github.io/cv-template/)
 
 ## Prerequisites
 
