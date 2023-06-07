@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-family: "League Spartan", sans-serif;
+  transition: all 400ms ease-in-out;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1rem auto;
+  background: rgb(238, 174, 202);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+}
+
+.cv-container {
+  width: 100%;
+  max-width: 840px;
+  box-shadow: 0 0 5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  background: white;
+
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    position: relative;
+
+    .header-circle {
+      background-color: rgba(230, 209, 10, 1);
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+    }
+
+    .cv-intro {
+      position: relative;
+      left: -5rem;
+
+      #cv-name {
+        font-size: 2rem;
+      }
+
+      #cv-position {
+        font-weight: 300;
+        padding-block: 0.5rem;
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+
+    .profile {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+
+      .profile-address {
+        width: 30%;
+        padding-inline: 3rem 4rem;
+        padding-block-start: 1rem;
+
+        #address-title {
+          border-bottom: 0.2rem solid #6b6b6b;
+          font-weight: 900;
+          font-size: 1rem;
+          margin-block-end: 1.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        #address-content {
+          color: #6b6b6b;
+          font-weight: 600;
+        }
+      }
+
+      .profile-details {
+        border-top: 0.1rem solid #6b6b6b;
+        width: 70%;
+        padding: 1rem;
+        margin: 1rem;
+        position: relative;
+        top: -4.6rem;
+
+        .contact {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin-block-end: 2rem;
+
+          .whatsapp-container,
+          .email-container,
+          .website-container {
+            display: flex;
+            gap: 0.25rem;
+            align-items: center;
+            justify-content: space-between;
+
+            .whatsapp,
+            .email,
+            .website {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              gap: 0.25rem;
+              padding-top: 0.3rem;
+
+              h3 {
+                font-size: 0.8rem;
+                color: #6b6b6b;
+              }
+
+              p,
+              a {
+                font-size: 0.85rem;
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+                &:visited {
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+
+        .photo-bio-wrapper {
+          .yellow-line {
+            position: relative;
+            width: 8rem;
+            height: 10px;
+            background-color: rgb(230, 209, 10);
+            z-index: 1;
+            top: -0.3rem;
+            left: -1rem;
+          }
+          #profile-header {
+            font-size: 1.3rem;
+            width: 8rem;
+            position: relative;
+            top: -1.1rem;
+            z-index: 2;
+            font-weight: 400;
+          }
+
+          .photo-bio {
+            display: flex;
+            align-items: center;
+
+            #profile-photo {
+              max-width: 7rem;
+              border-radius: 50%;
+            }
+
+            #profile-bio {
+              line-height: 1.2rem;
+              padding: 0.5rem;
+              text-align: justify;
+            }
+          }
+        }
+
+        .skills {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          top: 2rem;
+
+          .skillset {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            gap: 0.5rem;
+
+            .skill-title {
+              color: #6b6b6b;
+              font-weight: 900;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    .experiences-wrapper,
+    .educations-wrapper {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+
+      .experiences-header,
+      .educations-header {
+        width: 30%;
+        padding-inline: 3rem 4rem;
+        position: relative;
+        top: -4.6rem;
+
+        .experiences-section-title,
+        .educations-section-title {
+          border-bottom: 0.2rem solid #6b6b6b;
+          font-weight: 900;
+          font-size: 1.2rem;
+          margin-block-end: 1.5rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+      .experiences-details,
+      .educations-details {
+        width: 70%;
+        padding: 1rem;
+        margin: 1rem;
+        position: relative;
+        top: -4.6rem;
+
+        .experience,
+        .education {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding-block: 1rem;
+          .top-separator-yellow {
+            border-top: 3px solid rgba(230, 209, 10, 1);
+            padding-top: 1rem;
+          }
+          .date-location {
+            width: 23%;
+            .top-separator-black {
+              border-top: 3px solid;
+              padding-top: 1rem;
+            }
+
+            .location {
+              color: #6b6b6b;
+              padding: 0.5rem 3rem 0 0;
+              line-height: 1.3rem;
+            }
+          }
+          .title-description {
+            width: 77%;
+
+            .experience-title,
+            .education-title {
+              padding-bottom: 0.5rem;
+            }
+            .experience-description,
+            .education-description {
+              line-height: 1.3rem;
+              color: #6b6b6b;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .links-wrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 4rem;
+
+      .links-header {
+        width: 30%;
+        padding-inline: 3rem 4rem;
+
+        .links-section-title {
+          border-bottom: 0.2rem solid #6b6b6b;
+          font-weight: 900;
+          font-size: 1.2rem;
+          margin-block-end: 1.5rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+      .links-details {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-inline: 1rem;
+        img {
+          max-width: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 685px) {
+  .cv-container {
+    main {
+      .profile {
+        flex-direction: column;
+        .profile-address {
+          padding-inline: 1rem;
+          display: flex;
+          width: 90%;
+          gap: 1rem;
+          #address-title {
+            margin-block-end: 0;
+          }
+        }
+        .profile-details {
+          width: 90%;
+          position: static;
+          padding: 1rem 0 0 0;
+          margin: 0 1rem;
+          border-top: none;
+          .photo-bio-wrapper {
+            .photo-bio {
+              #profile-bio {
+                padding: 0 0 0.5rem 0.5rem;
+              }
+            }
+          }
+          .contact {
+            img {
+              display: none;
+            }
+          }
+          .photo-bio-wrapper {
+            .photo-bio {
+              #profile-photo {
+                max-width: 25%;
+              }
+              #profile-bio {
+                width: 75%;
+              }
+            }
+          }
+          .skills {
+            position: static;
+          }
+        }
+      }
+      .experiences-wrapper,
+      .educations-wrapper {
+        margin-block-start: 2rem;
+        .experiences-header,
+        .educations-header {
+          padding-inline: 1rem;
+          width: 0%;
+          top: unset;
+          .experiences-section-title,
+          .educations-section-title {
+            border-bottom: none;
+          }
+        }
+        .experiences-details,
+        .educations-details {
+          top: unset;
+          padding: 0 0.5rem 0 0;
+          margin: 0 0.5rem 0 0;
+          margin-block: 1.75rem 0;
+          width: 88%;
+          .experience,
+          .educations {
+            padding-inline-end: 1rem;
+            .date-location {
+              width: 25%;
+            }
+            .title-description {
+              width: 75%;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      .links-wrapper {
+        padding-bottom: 1rem;
+        flex-direction: column;
+      }
+      .links-header {
+        width: 100%;
+        padding-inline: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .header-circle {
+    width: 8rem !important;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  #profile-photo {
+    max-width: 8rem !important;
+    position: absolute;
+    right: 2rem;
+    top: 3.4rem;
+  }
+  #profile-bio {
+    width: 100% !important;
+  }
+  .experience,
+  .education {
+    gap: 1rem;
+  }
+  footer {
+    .links-details {
+      width: 100% !important;
+    }
+    .link-icon {
+      p {
+        display: none;
+      }
+    }
+  }
+}

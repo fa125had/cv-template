@@ -1,0 +1,557 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-family: "League Spartan", sans-serif;
+  transition: all 400ms ease-in-out;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1rem auto;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(270deg, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+}
+
+.cv-container {
+  width: 100%;
+  max-width: 840px;
+  box-shadow: 0 0 5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  background: white;
+}
+.cv-container header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  position: relative;
+}
+.cv-container header .header-circle {
+  background-color: rgb(230, 209, 10);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+.cv-container header .cv-intro {
+  position: relative;
+  left: -5rem;
+}
+.cv-container header .cv-intro #cv-name {
+  font-size: 2rem;
+}
+.cv-container header .cv-intro #cv-position {
+  font-weight: 300;
+  padding-block: 0.5rem;
+}
+.cv-container main {
+  width: 100%;
+}
+.cv-container main .profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.cv-container main .profile .profile-address {
+  width: 30%;
+  padding-inline: 3rem 4rem;
+  -webkit-padding-before: 1rem;
+          padding-block-start: 1rem;
+}
+.cv-container main .profile .profile-address #address-title {
+  border-bottom: 0.2rem solid #6b6b6b;
+  font-weight: 900;
+  font-size: 1rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.cv-container main .profile .profile-address #address-content {
+  color: #6b6b6b;
+  font-weight: 600;
+}
+.cv-container main .profile .profile-details {
+  border-top: 0.1rem solid #6b6b6b;
+  width: 70%;
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  top: -4.6rem;
+}
+.cv-container main .profile .profile-details .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+.cv-container main .profile .profile-details .contact .whatsapp-container,
+.cv-container main .profile .profile-details .contact .email-container,
+.cv-container main .profile .profile-details .contact .website-container {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp,
+.cv-container main .profile .profile-details .contact .email-container .email,
+.cv-container main .profile .profile-details .contact .email-container .website,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp,
+.cv-container main .profile .profile-details .contact .website-container .email,
+.cv-container main .profile .profile-details .contact .website-container .website {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.25rem;
+  padding-top: 0.3rem;
+}
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp h3,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email h3,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website h3,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp h3,
+.cv-container main .profile .profile-details .contact .email-container .email h3,
+.cv-container main .profile .profile-details .contact .email-container .website h3,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp h3,
+.cv-container main .profile .profile-details .contact .website-container .email h3,
+.cv-container main .profile .profile-details .contact .website-container .website h3 {
+  font-size: 0.8rem;
+  color: #6b6b6b;
+}
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp p,
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp a,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email p,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email a,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website p,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website a,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp p,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp a,
+.cv-container main .profile .profile-details .contact .email-container .email p,
+.cv-container main .profile .profile-details .contact .email-container .email a,
+.cv-container main .profile .profile-details .contact .email-container .website p,
+.cv-container main .profile .profile-details .contact .email-container .website a,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp p,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp a,
+.cv-container main .profile .profile-details .contact .website-container .email p,
+.cv-container main .profile .profile-details .contact .website-container .email a,
+.cv-container main .profile .profile-details .contact .website-container .website p,
+.cv-container main .profile .profile-details .contact .website-container .website a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: black;
+}
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp p:hover,
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp a:hover,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email p:hover,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email a:hover,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website p:hover,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website a:hover,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp p:hover,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp a:hover,
+.cv-container main .profile .profile-details .contact .email-container .email p:hover,
+.cv-container main .profile .profile-details .contact .email-container .email a:hover,
+.cv-container main .profile .profile-details .contact .email-container .website p:hover,
+.cv-container main .profile .profile-details .contact .email-container .website a:hover,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp p:hover,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp a:hover,
+.cv-container main .profile .profile-details .contact .website-container .email p:hover,
+.cv-container main .profile .profile-details .contact .website-container .email a:hover,
+.cv-container main .profile .profile-details .contact .website-container .website p:hover,
+.cv-container main .profile .profile-details .contact .website-container .website a:hover {
+  text-decoration: underline;
+}
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp p:visited,
+.cv-container main .profile .profile-details .contact .whatsapp-container .whatsapp a:visited,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email p:visited,
+.cv-container main .profile .profile-details .contact .whatsapp-container .email a:visited,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website p:visited,
+.cv-container main .profile .profile-details .contact .whatsapp-container .website a:visited,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp p:visited,
+.cv-container main .profile .profile-details .contact .email-container .whatsapp a:visited,
+.cv-container main .profile .profile-details .contact .email-container .email p:visited,
+.cv-container main .profile .profile-details .contact .email-container .email a:visited,
+.cv-container main .profile .profile-details .contact .email-container .website p:visited,
+.cv-container main .profile .profile-details .contact .email-container .website a:visited,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp p:visited,
+.cv-container main .profile .profile-details .contact .website-container .whatsapp a:visited,
+.cv-container main .profile .profile-details .contact .website-container .email p:visited,
+.cv-container main .profile .profile-details .contact .website-container .email a:visited,
+.cv-container main .profile .profile-details .contact .website-container .website p:visited,
+.cv-container main .profile .profile-details .contact .website-container .website a:visited {
+  color: black;
+}
+.cv-container main .profile .profile-details .photo-bio-wrapper .yellow-line {
+  position: relative;
+  width: 8rem;
+  height: 10px;
+  background-color: rgb(230, 209, 10);
+  z-index: 1;
+  top: -0.3rem;
+  left: -1rem;
+}
+.cv-container main .profile .profile-details .photo-bio-wrapper #profile-header {
+  font-size: 1.3rem;
+  width: 8rem;
+  position: relative;
+  top: -1.1rem;
+  z-index: 2;
+  font-weight: 400;
+}
+.cv-container main .profile .profile-details .photo-bio-wrapper .photo-bio {
+  display: flex;
+  align-items: center;
+}
+.cv-container main .profile .profile-details .photo-bio-wrapper .photo-bio #profile-photo {
+  max-width: 7rem;
+  border-radius: 50%;
+}
+.cv-container main .profile .profile-details .photo-bio-wrapper .photo-bio #profile-bio {
+  line-height: 1.2rem;
+  padding: 0.5rem;
+  text-align: justify;
+}
+.cv-container main .profile .profile-details .skills {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 2rem;
+}
+.cv-container main .profile .profile-details .skills .skillset {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 0.5rem;
+}
+.cv-container main .profile .profile-details .skills .skillset .skill-title {
+  color: #6b6b6b;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.cv-container main .experiences-wrapper,
+.cv-container main .educations-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+.cv-container main .experiences-wrapper .experiences-header,
+.cv-container main .experiences-wrapper .educations-header,
+.cv-container main .educations-wrapper .experiences-header,
+.cv-container main .educations-wrapper .educations-header {
+  width: 30%;
+  padding-inline: 3rem 4rem;
+  position: relative;
+  top: -4.6rem;
+}
+.cv-container main .experiences-wrapper .experiences-header .experiences-section-title,
+.cv-container main .experiences-wrapper .experiences-header .educations-section-title,
+.cv-container main .experiences-wrapper .educations-header .experiences-section-title,
+.cv-container main .experiences-wrapper .educations-header .educations-section-title,
+.cv-container main .educations-wrapper .experiences-header .experiences-section-title,
+.cv-container main .educations-wrapper .experiences-header .educations-section-title,
+.cv-container main .educations-wrapper .educations-header .experiences-section-title,
+.cv-container main .educations-wrapper .educations-header .educations-section-title {
+  border-bottom: 0.2rem solid #6b6b6b;
+  font-weight: 900;
+  font-size: 1.2rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.cv-container main .experiences-wrapper .experiences-details,
+.cv-container main .experiences-wrapper .educations-details,
+.cv-container main .educations-wrapper .experiences-details,
+.cv-container main .educations-wrapper .educations-details {
+  width: 70%;
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  top: -4.6rem;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience,
+.cv-container main .experiences-wrapper .experiences-details .education,
+.cv-container main .experiences-wrapper .educations-details .experience,
+.cv-container main .experiences-wrapper .educations-details .education,
+.cv-container main .educations-wrapper .experiences-details .experience,
+.cv-container main .educations-wrapper .experiences-details .education,
+.cv-container main .educations-wrapper .educations-details .experience,
+.cv-container main .educations-wrapper .educations-details .education {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience .top-separator-yellow,
+.cv-container main .experiences-wrapper .experiences-details .education .top-separator-yellow,
+.cv-container main .experiences-wrapper .educations-details .experience .top-separator-yellow,
+.cv-container main .experiences-wrapper .educations-details .education .top-separator-yellow,
+.cv-container main .educations-wrapper .experiences-details .experience .top-separator-yellow,
+.cv-container main .educations-wrapper .experiences-details .education .top-separator-yellow,
+.cv-container main .educations-wrapper .educations-details .experience .top-separator-yellow,
+.cv-container main .educations-wrapper .educations-details .education .top-separator-yellow {
+  border-top: 3px solid rgb(230, 209, 10);
+  padding-top: 1rem;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience .date-location,
+.cv-container main .experiences-wrapper .experiences-details .education .date-location,
+.cv-container main .experiences-wrapper .educations-details .experience .date-location,
+.cv-container main .experiences-wrapper .educations-details .education .date-location,
+.cv-container main .educations-wrapper .experiences-details .experience .date-location,
+.cv-container main .educations-wrapper .experiences-details .education .date-location,
+.cv-container main .educations-wrapper .educations-details .experience .date-location,
+.cv-container main .educations-wrapper .educations-details .education .date-location {
+  width: 23%;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience .date-location .top-separator-black,
+.cv-container main .experiences-wrapper .experiences-details .education .date-location .top-separator-black,
+.cv-container main .experiences-wrapper .educations-details .experience .date-location .top-separator-black,
+.cv-container main .experiences-wrapper .educations-details .education .date-location .top-separator-black,
+.cv-container main .educations-wrapper .experiences-details .experience .date-location .top-separator-black,
+.cv-container main .educations-wrapper .experiences-details .education .date-location .top-separator-black,
+.cv-container main .educations-wrapper .educations-details .experience .date-location .top-separator-black,
+.cv-container main .educations-wrapper .educations-details .education .date-location .top-separator-black {
+  border-top: 3px solid;
+  padding-top: 1rem;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience .date-location .location,
+.cv-container main .experiences-wrapper .experiences-details .education .date-location .location,
+.cv-container main .experiences-wrapper .educations-details .experience .date-location .location,
+.cv-container main .experiences-wrapper .educations-details .education .date-location .location,
+.cv-container main .educations-wrapper .experiences-details .experience .date-location .location,
+.cv-container main .educations-wrapper .experiences-details .education .date-location .location,
+.cv-container main .educations-wrapper .educations-details .experience .date-location .location,
+.cv-container main .educations-wrapper .educations-details .education .date-location .location {
+  color: #6b6b6b;
+  padding: 0.5rem 3rem 0 0;
+  line-height: 1.3rem;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience .title-description,
+.cv-container main .experiences-wrapper .experiences-details .education .title-description,
+.cv-container main .experiences-wrapper .educations-details .experience .title-description,
+.cv-container main .experiences-wrapper .educations-details .education .title-description,
+.cv-container main .educations-wrapper .experiences-details .experience .title-description,
+.cv-container main .educations-wrapper .experiences-details .education .title-description,
+.cv-container main .educations-wrapper .educations-details .experience .title-description,
+.cv-container main .educations-wrapper .educations-details .education .title-description {
+  width: 77%;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience .title-description .experience-title,
+.cv-container main .experiences-wrapper .experiences-details .experience .title-description .education-title,
+.cv-container main .experiences-wrapper .experiences-details .education .title-description .experience-title,
+.cv-container main .experiences-wrapper .experiences-details .education .title-description .education-title,
+.cv-container main .experiences-wrapper .educations-details .experience .title-description .experience-title,
+.cv-container main .experiences-wrapper .educations-details .experience .title-description .education-title,
+.cv-container main .experiences-wrapper .educations-details .education .title-description .experience-title,
+.cv-container main .experiences-wrapper .educations-details .education .title-description .education-title,
+.cv-container main .educations-wrapper .experiences-details .experience .title-description .experience-title,
+.cv-container main .educations-wrapper .experiences-details .experience .title-description .education-title,
+.cv-container main .educations-wrapper .experiences-details .education .title-description .experience-title,
+.cv-container main .educations-wrapper .experiences-details .education .title-description .education-title,
+.cv-container main .educations-wrapper .educations-details .experience .title-description .experience-title,
+.cv-container main .educations-wrapper .educations-details .experience .title-description .education-title,
+.cv-container main .educations-wrapper .educations-details .education .title-description .experience-title,
+.cv-container main .educations-wrapper .educations-details .education .title-description .education-title {
+  padding-bottom: 0.5rem;
+}
+.cv-container main .experiences-wrapper .experiences-details .experience .title-description .experience-description,
+.cv-container main .experiences-wrapper .experiences-details .experience .title-description .education-description,
+.cv-container main .experiences-wrapper .experiences-details .education .title-description .experience-description,
+.cv-container main .experiences-wrapper .experiences-details .education .title-description .education-description,
+.cv-container main .experiences-wrapper .educations-details .experience .title-description .experience-description,
+.cv-container main .experiences-wrapper .educations-details .experience .title-description .education-description,
+.cv-container main .experiences-wrapper .educations-details .education .title-description .experience-description,
+.cv-container main .experiences-wrapper .educations-details .education .title-description .education-description,
+.cv-container main .educations-wrapper .experiences-details .experience .title-description .experience-description,
+.cv-container main .educations-wrapper .experiences-details .experience .title-description .education-description,
+.cv-container main .educations-wrapper .experiences-details .education .title-description .experience-description,
+.cv-container main .educations-wrapper .experiences-details .education .title-description .education-description,
+.cv-container main .educations-wrapper .educations-details .experience .title-description .experience-description,
+.cv-container main .educations-wrapper .educations-details .experience .title-description .education-description,
+.cv-container main .educations-wrapper .educations-details .education .title-description .experience-description,
+.cv-container main .educations-wrapper .educations-details .education .title-description .education-description {
+  line-height: 1.3rem;
+  color: #6b6b6b;
+}
+.cv-container footer .links-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.cv-container footer .links-wrapper .links-header {
+  width: 30%;
+  padding-inline: 3rem 4rem;
+}
+.cv-container footer .links-wrapper .links-header .links-section-title {
+  border-bottom: 0.2rem solid #6b6b6b;
+  font-weight: 900;
+  font-size: 1.2rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.cv-container footer .links-wrapper .links-details {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-inline: 1rem;
+}
+.cv-container footer .links-wrapper .links-details img {
+  max-width: 3rem;
+}
+
+@media (max-width: 685px) {
+  .cv-container main .profile {
+    flex-direction: column;
+  }
+  .cv-container main .profile .profile-address {
+    padding-inline: 1rem;
+    display: flex;
+    width: 90%;
+    gap: 1rem;
+  }
+  .cv-container main .profile .profile-address #address-title {
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
+  .cv-container main .profile .profile-details {
+    width: 90%;
+    position: static;
+    padding: 1rem 0 0 0;
+    margin: 0 1rem;
+    border-top: none;
+  }
+  .cv-container main .profile .profile-details .photo-bio-wrapper .photo-bio #profile-bio {
+    padding: 0 0 0.5rem 0.5rem;
+  }
+  .cv-container main .profile .profile-details .contact img {
+    display: none;
+  }
+  .cv-container main .profile .profile-details .photo-bio-wrapper .photo-bio #profile-photo {
+    max-width: 25%;
+  }
+  .cv-container main .profile .profile-details .photo-bio-wrapper .photo-bio #profile-bio {
+    width: 75%;
+  }
+  .cv-container main .profile .profile-details .skills {
+    position: static;
+  }
+  .cv-container main .experiences-wrapper,
+  .cv-container main .educations-wrapper {
+    -webkit-margin-before: 2rem;
+            margin-block-start: 2rem;
+  }
+  .cv-container main .experiences-wrapper .experiences-header,
+  .cv-container main .experiences-wrapper .educations-header,
+  .cv-container main .educations-wrapper .experiences-header,
+  .cv-container main .educations-wrapper .educations-header {
+    padding-inline: 1rem;
+    width: 0%;
+    top: unset;
+  }
+  .cv-container main .experiences-wrapper .experiences-header .experiences-section-title,
+  .cv-container main .experiences-wrapper .experiences-header .educations-section-title,
+  .cv-container main .experiences-wrapper .educations-header .experiences-section-title,
+  .cv-container main .experiences-wrapper .educations-header .educations-section-title,
+  .cv-container main .educations-wrapper .experiences-header .experiences-section-title,
+  .cv-container main .educations-wrapper .experiences-header .educations-section-title,
+  .cv-container main .educations-wrapper .educations-header .experiences-section-title,
+  .cv-container main .educations-wrapper .educations-header .educations-section-title {
+    border-bottom: none;
+  }
+  .cv-container main .experiences-wrapper .experiences-details,
+  .cv-container main .experiences-wrapper .educations-details,
+  .cv-container main .educations-wrapper .experiences-details,
+  .cv-container main .educations-wrapper .educations-details {
+    top: unset;
+    padding: 0 0.5rem 0 0;
+    margin: 0 0.5rem 0 0;
+    margin-block: 1.75rem 0;
+    width: 88%;
+  }
+  .cv-container main .experiences-wrapper .experiences-details .experience,
+  .cv-container main .experiences-wrapper .experiences-details .educations,
+  .cv-container main .experiences-wrapper .educations-details .experience,
+  .cv-container main .experiences-wrapper .educations-details .educations,
+  .cv-container main .educations-wrapper .experiences-details .experience,
+  .cv-container main .educations-wrapper .experiences-details .educations,
+  .cv-container main .educations-wrapper .educations-details .experience,
+  .cv-container main .educations-wrapper .educations-details .educations {
+    -webkit-padding-end: 1rem;
+            padding-inline-end: 1rem;
+  }
+  .cv-container main .experiences-wrapper .experiences-details .experience .date-location,
+  .cv-container main .experiences-wrapper .experiences-details .educations .date-location,
+  .cv-container main .experiences-wrapper .educations-details .experience .date-location,
+  .cv-container main .experiences-wrapper .educations-details .educations .date-location,
+  .cv-container main .educations-wrapper .experiences-details .experience .date-location,
+  .cv-container main .educations-wrapper .experiences-details .educations .date-location,
+  .cv-container main .educations-wrapper .educations-details .experience .date-location,
+  .cv-container main .educations-wrapper .educations-details .educations .date-location {
+    width: 25%;
+  }
+  .cv-container main .experiences-wrapper .experiences-details .experience .title-description,
+  .cv-container main .experiences-wrapper .experiences-details .educations .title-description,
+  .cv-container main .experiences-wrapper .educations-details .experience .title-description,
+  .cv-container main .experiences-wrapper .educations-details .educations .title-description,
+  .cv-container main .educations-wrapper .experiences-details .experience .title-description,
+  .cv-container main .educations-wrapper .experiences-details .educations .title-description,
+  .cv-container main .educations-wrapper .educations-details .experience .title-description,
+  .cv-container main .educations-wrapper .educations-details .educations .title-description {
+    width: 75%;
+  }
+  .cv-container footer .links-wrapper {
+    padding-bottom: 1rem;
+    flex-direction: column;
+  }
+  .cv-container footer .links-header {
+    width: 100%;
+    padding-inline: 0;
+  }
+}
+@media (max-width: 430px) {
+  .header-circle {
+    width: 8rem !important;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  #profile-photo {
+    max-width: 8rem !important;
+    position: absolute;
+    right: 2rem;
+    top: 3.4rem;
+  }
+  #profile-bio {
+    width: 100% !important;
+  }
+  .experience,
+  .education {
+    gap: 1rem;
+  }
+  footer .links-details {
+    width: 100% !important;
+  }
+  footer .link-icon p {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
