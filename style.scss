@@ -406,8 +406,9 @@ body {
         flex-direction: column;
       }
       .links-header {
-        width: 100%;
-        padding-inline: 0;
+        width: 34% !important;
+        padding-inline: 2rem 4rem !important;
+        align-self: flex-start !important;
       }
     }
   }
@@ -415,7 +416,7 @@ body {
 
 @media (max-width: 430px) {
   .header-circle {
-    width: 8rem !important;
+    width: 9rem !important;
   }
   .contact {
     flex-direction: column;
@@ -430,11 +431,19 @@ body {
   #profile-bio {
     width: 100% !important;
   }
+  .skills {
+    align-items: flex-end !important;
+  }
   .experience,
   .education {
     gap: 1rem;
   }
   footer {
+    .links-header {
+      width: 34% !important;
+      padding-inline: 2rem 4rem !important;
+      align-self: flex-start !important;
+    }
     .links-details {
       width: 100% !important;
     }
